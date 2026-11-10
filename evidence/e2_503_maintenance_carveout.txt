@@ -1,0 +1,1 @@
+HTTP Client Retry Addendum v1.1, Section 2.1.a (503-maintenance): As a specific sub-scope exception to the general HTTP 5xx retry rule, HTTP 503 responses carrying header X-Maintenance-Window must never be retried; all other HTTP 5xx responses still retry up to 3 times.

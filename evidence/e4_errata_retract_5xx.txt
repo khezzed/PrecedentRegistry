@@ -1,0 +1,1 @@
+HTTP Client Retry Errata v2.0 (Official Retraction): Section 2.1 (5xx-responses: All HTTP 5xx server error responses must be retried up to 3 times using exponential backoff) is hereby explicitly retracted, deprecated, and invalidated in full due to cascading retry storms.

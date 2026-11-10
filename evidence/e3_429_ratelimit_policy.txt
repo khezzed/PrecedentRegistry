@@ -1,0 +1,1 @@
+HTTP Client Retry Standard v1.0, Section 3.1 (429-rate-limit): Governing client 4xx rate-limiting (a distinct scope from 5xx server errors): HTTP 429 Too Many Requests responses must pause and wait for the exact duration specified in the Retry-After header.

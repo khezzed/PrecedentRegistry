@@ -1,0 +1,1 @@
+HTTP Client Retry Standard v1.0, Section 2.1 (5xx-responses): All HTTP 5xx server error responses (500-599) must be retried up to 3 times using exponential backoff.
