@@ -1,0 +1,767 @@
+{
+  "projectName": "PrecedentRegistry",
+  "description": "Evolving technical standard / case-law registry Intelligent Contract on GenLayer StudioNet",
+  "sourceCommitSha": "5d15e8173e5272e78fa5a4ca18dd90e415989d6f",
+  "contractPath": "contracts/precedent_registry.py",
+  "gitBlobHash": "76fe77ffcb28945afb0913979fb94ddd7f89043c",
+  "localContractSha256": "91bc3c12f4fa6a55892aee3e1f0f58b2e821cec1b68dee520f0068acbd738b71",
+  "deployedCodeSha256": "91bc3c12f4fa6a55892aee3e1f0f58b2e821cec1b68dee520f0068acbd738b71",
+  "blobEqualityResult": "MATCH (100% byte-for-byte)",
+  "runnerHash": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+  "environment": "StudioNet",
+  "network": "studionet",
+  "rpcUrl": "https://studio.genlayer.com/api",
+  "accounts": {
+    "accountA": {
+      "role": "Creator / Author 1 / Deployer",
+      "address": "0x13bd955B020e9efe81BeEf03Bd4B057Ac2465EC3"
+    },
+    "accountB": {
+      "role": "Author 2",
+      "address": "0xBeAd63dC66143c8FcD09439e820AB29d7d63c705"
+    },
+    "accountC": {
+      "role": "Author 3",
+      "address": "0x48AA203D6F0691F9Ae0633391c6D00C9B78B6637"
+    }
+  },
+  "probeContract": {
+    "codePath": "deploy/probe.py",
+    "runnerHash": "py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6",
+    "address": "0xe950C5Bf02D08142E9b290150001a515Cc808470",
+    "deployTx": "0xfa4eb64146c4189dd45d2c120b73fac920a8e7a6dbcf57cd0933074786621b31",
+    "setTx": "0x44765c5cf6ce3ed2dfef83e5af6a84ae8c480acb67f20fb67476fd69f3b42d0e",
+    "verifiedValue": "probe_ok"
+  },
+  "mainContract": {
+    "address": "0x6793beCe04293044cFa6feabb24401231E666602",
+    "deployTx": "0x861c5d7114194c3ce0ea770e9a6ad1327ff20cff3cea2e2f2afff107cbac79a9"
+  },
+  "evidenceFiles": [
+    {
+      "file": "evidence/e1_5xx_retry_policy.txt",
+      "size": 165,
+      "sha256": "9cdd9145d16281f2c63b2856d5c72b93a763c0c6b83693f8947788d20106d47f",
+      "url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e1_5xx_retry_policy.txt"
+    },
+    {
+      "file": "evidence/e2_503_maintenance_carveout.txt",
+      "size": 271,
+      "sha256": "b9adfaa139a210239e175dea17ba1fe3b4e26651a6de5529d434e697a9674875",
+      "url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e2_503_maintenance_carveout.txt"
+    },
+    {
+      "file": "evidence/e3_429_ratelimit_policy.txt",
+      "size": 258,
+      "sha256": "95c107610aa71b2d0bd1dde3ed61cb160d388cd1962bf1d55489cc2d9ce71522",
+      "url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e3_429_ratelimit_policy.txt"
+    },
+    {
+      "file": "evidence/e4_errata_retract_5xx.txt",
+      "size": 273,
+      "sha256": "54a88e6f901c5d6489f084fcd51e61b99acd0d257fe70ce1d4b637bb1094b535",
+      "url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e4_errata_retract_5xx.txt"
+    },
+    {
+      "file": "evidence/e5_unrelated_recipe.txt",
+      "size": 149,
+      "sha256": "cb675e93dcce55394b445e800d5b92707b333f2c1562ac61c23a6380e5691c60",
+      "url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e5_unrelated_recipe.txt"
+    }
+  ],
+  "demoDomain": {
+    "domainTag": "http-retry",
+    "epochDuration": 780
+  },
+  "transactions": [
+    {
+      "step": "S1",
+      "scenario": "Domain Initialization",
+      "method": "open_domain",
+      "account": "A",
+      "args": [
+        "http-retry",
+        780
+      ],
+      "hash": "0x60b6910bfee7577c37651d163d6e725b56f6e6f523ef70e21a52bde4856ceade",
+      "status": "FINALIZED",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "returnOrError": "OPENED:http-retry",
+      "votes": {
+        "0x0174b4D7494Be33F46B76976f6c9F94004F1b27f": "idle",
+        "0x2bB088e4E6Fd1faBBd23d93F38D01f28a954A49c": "idle",
+        "0x37CD8552B86b2B662eCfb69C4A1253dBE41EB4C1": "agree",
+        "0x560FBD37a10bC2B96F118071e922c9106c12Ba1d": "agree",
+        "0xe1626534791FC675ED813Cc2C89C427866526113": "agree"
+      },
+      "expected": "OPENED:http-retry",
+      "actual": "OPENED:http-retry",
+      "expectedFailure": false,
+      "readBack": {
+        "domain_tag": "http-retry",
+        "creator": "0x13bd955B020e9efe81BeEf03Bd4B057Ac2465EC3",
+        "epoch": 1,
+        "epoch_deadline": 1794306611,
+        "status": "OPEN",
+        "attempts": 0,
+        "replay_keys": [],
+        "canon_digest": "",
+        "entries": []
+      }
+    },
+    {
+      "step": "S2",
+      "scenario": "Initial Root Precedent Admission",
+      "method": "propose_entry",
+      "account": "A",
+      "args": [
+        "http-retry",
+        "5xx-responses",
+        "All HTTP 5xx server error responses must be retried up to 3 times using exponential backoff.",
+        "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e1_5xx_retry_policy.txt",
+        0
+      ],
+      "hash": "0xb7f85490eeee8bb3e8d485b47c6471809bff1e45150a0db9dea48f74323830df",
+      "status": "FINALIZED",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "returnOrError": "ADMITTED:ENTRY_1:RELATION_INITIAL",
+      "votes": {
+        "0x2C93031BCCd12836A67f81a249e68abAFEaac2E5": "agree",
+        "0x560FBD37a10bC2B96F118071e922c9106c12Ba1d": "idle",
+        "0xC65Ec56a1141866951B34D846be8EF433764A48B": "agree",
+        "0xe1626534791FC675ED813Cc2C89C427866526113": "agree",
+        "0xe83D7241D0FF0f1f808B9ab3cb06dD2565bDc605": "idle"
+      },
+      "expected": "ADMITTED:ENTRY_1:RELATION_INITIAL",
+      "actual": "ADMITTED:ENTRY_1:RELATION_INITIAL",
+      "expectedFailure": false,
+      "readBack": {
+        "entry1": {
+          "id": 1,
+          "author": "0x13bd955B020e9efe81BeEf03Bd4B057Ac2465EC3",
+          "scope_key": "5xx-responses",
+          "rule_statement": "All HTTP 5xx server error responses must be retried up to 3 times using exponential backoff.",
+          "evidence_url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e1_5xx_retry_policy.txt",
+          "evidence_digest": "9cdd9145d16281f2c63b2856d5c72b93a763c0c6b83693f8947788d20106d47f",
+          "retraction_url": "",
+          "retraction_digest": "",
+          "parent_id": 0,
+          "depth": 1,
+          "children": [],
+          "status": "ACTIVE",
+          "relation": "INITIAL"
+        },
+        "activeCanon": [
+          {
+            "id": 1,
+            "scope_key": "5xx-responses",
+            "rule_statement": "All HTTP 5xx server error responses must be retried up to 3 times using exponential backoff.",
+            "parent_id": 0,
+            "children": []
+          }
+        ]
+      }
+    },
+    {
+      "step": "S3",
+      "scenario": "Path-Dependence / Root Contradiction Blocked",
+      "method": "propose_entry",
+      "account": "B",
+      "args": [
+        "http-retry",
+        "5xx-responses",
+        "HTTP 503 responses carrying header X-Maintenance-Window must never be retried.",
+        "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e2_503_maintenance_carveout.txt",
+        0
+      ],
+      "hash": "0xa2978f06193eae099b43037ea3742a85bf2eeaa886ffcf65df47588d98783f2f",
+      "status": "FINALIZED",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "returnOrError": "REJECTED:FETCH_OK:PREMISE_SUPPORTED:RELATION_CONTRADICTS",
+      "votes": {
+        "0x1Cd67946A11E6410a3DF1b27d35F4a511e93c882": "idle",
+        "0x29300188B54F5BFEE91542595611603b4B201008": "idle",
+        "0x2C93031BCCd12836A67f81a249e68abAFEaac2E5": "agree",
+        "0x560FBD37a10bC2B96F118071e922c9106c12Ba1d": "agree",
+        "0xC65Ec56a1141866951B34D846be8EF433764A48B": "agree"
+      },
+      "expected": "REJECTED:FETCH_OK:PREMISE_SUPPORTED:RELATION_CONTRADICTS",
+      "actual": "REJECTED:FETCH_OK:PREMISE_SUPPORTED:RELATION_CONTRADICTS",
+      "expectedFailure": false,
+      "readBack": {
+        "entryCount": 1,
+        "activeCanonCount": 1,
+        "activeCanon": [
+          {
+            "id": 1,
+            "scope_key": "5xx-responses",
+            "rule_statement": "All HTTP 5xx server error responses must be retried up to 3 times using exponential backoff.",
+            "parent_id": 0,
+            "children": []
+          }
+        ]
+      }
+    },
+    {
+      "step": "S4",
+      "scenario": "Narrowing Carve-Out Admitted",
+      "method": "propose_entry",
+      "account": "B",
+      "args": [
+        "http-retry",
+        "503-maintenance",
+        "HTTP 503 responses carrying header X-Maintenance-Window must never be retried, carving out maintenance windows from general 5xx retries.",
+        "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e2_503_maintenance_carveout.txt",
+        1
+      ],
+      "hash": "0x14c44dabfc3e07392b80d7719d6eac62bbb6dbe7ddb5034151917c51b037352d",
+      "status": "FINALIZED",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "returnOrError": "ADMITTED:ENTRY_2:RELATION_NARROWS",
+      "votes": {
+        "0x0cf3809a31B0c7E0742d126451aDE1977e3748D2": "agree",
+        "0x2C93031BCCd12836A67f81a249e68abAFEaac2E5": "idle",
+        "0x709a1dDECA594C16AB3864A00Eaa2BB1Cd9b5305": "idle",
+        "0x8644a8D2D08903cAFA1F0fb28E34E0ecA727e9ED": "agree",
+        "0xC65Ec56a1141866951B34D846be8EF433764A48B": "agree"
+      },
+      "expected": "ADMITTED:ENTRY_2:RELATION_NARROWS",
+      "actual": "ADMITTED:ENTRY_2:RELATION_NARROWS",
+      "expectedFailure": false,
+      "readBack": {
+        "parentEntry1": {
+          "id": 1,
+          "author": "0x13bd955B020e9efe81BeEf03Bd4B057Ac2465EC3",
+          "scope_key": "5xx-responses",
+          "rule_statement": "All HTTP 5xx server error responses must be retried up to 3 times using exponential backoff.",
+          "evidence_url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e1_5xx_retry_policy.txt",
+          "evidence_digest": "9cdd9145d16281f2c63b2856d5c72b93a763c0c6b83693f8947788d20106d47f",
+          "retraction_url": "",
+          "retraction_digest": "",
+          "parent_id": 0,
+          "depth": 1,
+          "children": [
+            2
+          ],
+          "status": "ACTIVE_CARVED",
+          "relation": "INITIAL"
+        },
+        "childEntry2": {
+          "id": 2,
+          "author": "0xBeAd63dC66143c8FcD09439e820AB29d7d63c705",
+          "scope_key": "503-maintenance",
+          "rule_statement": "HTTP 503 responses carrying header X-Maintenance-Window must never be retried, carving out maintenance windows from general 5xx retries.",
+          "evidence_url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e2_503_maintenance_carveout.txt",
+          "evidence_digest": "b9adfaa139a210239e175dea17ba1fe3b4e26651a6de5529d434e697a9674875",
+          "retraction_url": "",
+          "retraction_digest": "",
+          "parent_id": 1,
+          "depth": 2,
+          "children": [],
+          "status": "ACTIVE",
+          "relation": "NARROWS"
+        }
+      }
+    },
+    {
+      "step": "S5",
+      "scenario": "Orthogonal Root Admitted",
+      "method": "propose_entry",
+      "account": "C",
+      "args": [
+        "http-retry",
+        "429-rate-limit",
+        "HTTP 429 Too Many Requests responses must pause and wait for the duration in the Retry-After header.",
+        "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e3_429_ratelimit_policy.txt",
+        0
+      ],
+      "hash": "0x08d092f9c3542cac92714c0f076695c073ced9a2ead66bbc2c87dd0d0a55b686",
+      "status": "FINALIZED",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "returnOrError": "ADMITTED:ENTRY_3:RELATION_ORTHOGONAL",
+      "votes": {
+        "0x2bB088e4E6Fd1faBBd23d93F38D01f28a954A49c": "agree",
+        "0x560FBD37a10bC2B96F118071e922c9106c12Ba1d": "idle",
+        "0x711353514049EAc21213834ADd07eF552aF394E6": "agree",
+        "0xD0eD149D26E76cf49fB588c970E608E44Dd4DAB8": "idle",
+        "0xc675c2B7E1F066B7c1D2fe54EF7B76C91CdFa5F4": "agree"
+      },
+      "expected": "ADMITTED:ENTRY_3:RELATION_ORTHOGONAL",
+      "actual": "ADMITTED:ENTRY_3:RELATION_ORTHOGONAL",
+      "expectedFailure": false,
+      "readBack": {
+        "entry3": {
+          "id": 3,
+          "author": "0x48AA203D6F0691F9Ae0633391c6D00C9B78B6637",
+          "scope_key": "429-rate-limit",
+          "rule_statement": "HTTP 429 Too Many Requests responses must pause and wait for the duration in the Retry-After header.",
+          "evidence_url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e3_429_ratelimit_policy.txt",
+          "evidence_digest": "95c107610aa71b2d0bd1dde3ed61cb160d388cd1962bf1d55489cc2d9ce71522",
+          "retraction_url": "",
+          "retraction_digest": "",
+          "parent_id": 0,
+          "depth": 1,
+          "children": [],
+          "status": "ACTIVE",
+          "relation": "ORTHOGONAL"
+        },
+        "activeCanonCount": 3,
+        "activeCanon": [
+          {
+            "id": 1,
+            "scope_key": "5xx-responses",
+            "rule_statement": "All HTTP 5xx server error responses must be retried up to 3 times using exponential backoff.",
+            "parent_id": 0,
+            "children": [
+              2
+            ]
+          },
+          {
+            "id": 2,
+            "scope_key": "503-maintenance",
+            "rule_statement": "HTTP 503 responses carrying header X-Maintenance-Window must never be retried, carving out maintenance windows from general 5xx retries.",
+            "parent_id": 1,
+            "children": []
+          },
+          {
+            "id": 3,
+            "scope_key": "429-rate-limit",
+            "rule_statement": "HTTP 429 Too Many Requests responses must pause and wait for the duration in the Retry-After header.",
+            "parent_id": 0,
+            "children": []
+          }
+        ]
+      }
+    },
+    {
+      "step": "X1",
+      "scenario": "Expected Failure: Unrelated Evidence Rejected",
+      "method": "propose_entry",
+      "account": "B",
+      "args": [
+        "http-retry",
+        "timeout-policy",
+        "All socket timeouts must default to 5 seconds.",
+        "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e5_unrelated_recipe.txt",
+        0
+      ],
+      "hash": "0x41c20d1274cb68aa0b3d9bd328c3eec5e0e2cff46dee37a2ff05e888bc8957fe",
+      "status": "FINALIZED",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "returnOrError": "REJECTED:FETCH_OK:PREMISE_UNSUPPORTED:RELATION_UNCLEAR",
+      "votes": {
+        "0x2C93031BCCd12836A67f81a249e68abAFEaac2E5": "idle",
+        "0x37CD8552B86b2B662eCfb69C4A1253dBE41EB4C1": "agree",
+        "0x560FBD37a10bC2B96F118071e922c9106c12Ba1d": "idle",
+        "0xe1626534791FC675ED813Cc2C89C427866526113": "agree",
+        "0xe83D7241D0FF0f1f808B9ab3cb06dD2565bDc605": "agree"
+      },
+      "expected": "REJECTED:FETCH_OK:PREMISE_UNSUPPORTED:RELATION_UNCLEAR",
+      "actual": "REJECTED:FETCH_OK:PREMISE_UNSUPPORTED:RELATION_UNCLEAR",
+      "expectedFailure": true,
+      "readBack": {
+        "entryCount": 3,
+        "rejectedAsExpected": true
+      }
+    },
+    {
+      "step": "X2",
+      "scenario": "Expected Failure: Duplicate Replay Blocked",
+      "method": "propose_entry",
+      "account": "B",
+      "args": [
+        "http-retry",
+        "503-maintenance",
+        "HTTP 503 responses carrying header X-Maintenance-Window must never be retried, carving out maintenance windows from general 5xx retries.",
+        "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e2_503_maintenance_carveout.txt",
+        1
+      ],
+      "hash": "0x9640768f075f38d0e57245a18184b79e15f7730ce6d940957c71f97e1754561f",
+      "status": "FINALIZED",
+      "executionResult": "ERROR",
+      "consensusResult": "MAJORITY_AGREE",
+      "returnOrError": "\"REPLAY_SUBMISSION\"",
+      "votes": {
+        "0x0174b4D7494Be33F46B76976f6c9F94004F1b27f": "agree",
+        "0x29300188B54F5BFEE91542595611603b4B201008": "idle",
+        "0x709a1dDECA594C16AB3864A00Eaa2BB1Cd9b5305": "agree",
+        "0x8ADae333478F9D037c78b0E3E8279DdAAb20a1B3": "idle",
+        "0xD0eD149D26E76cf49fB588c970E608E44Dd4DAB8": "agree"
+      },
+      "expected": "UserError: REPLAY_SUBMISSION",
+      "actual": "\"REPLAY_SUBMISSION\"",
+      "expectedFailure": true,
+      "readBack": "Duplicate proposal blocked by replay key cache"
+    },
+    {
+      "step": "X3",
+      "scenario": "Expected Failure: Unauthorized Retraction Blocked",
+      "method": "retract_entry",
+      "account": "C",
+      "args": [
+        1,
+        "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e4_errata_retract_5xx.txt"
+      ],
+      "hash": "0xde09ea14711cfb6b1f9f37a6d166bb6fdffc4f991c87acd356dd4839dae088c6",
+      "status": "FINALIZED",
+      "executionResult": "ERROR",
+      "consensusResult": "MAJORITY_AGREE",
+      "returnOrError": "\"UNAUTHORIZED_RETRACTION\"",
+      "votes": {
+        "0x37CD8552B86b2B662eCfb69C4A1253dBE41EB4C1": "agree",
+        "0x8f1abcAF0fF10678Af925f83b2Bb8b3534c4b94b": "idle",
+        "0xC65Ec56a1141866951B34D846be8EF433764A48B": "idle",
+        "0xD0eD149D26E76cf49fB588c970E608E44Dd4DAB8": "agree",
+        "0xf1EAD5E5f876eae701eF1881b42861079cd9A287": "agree"
+      },
+      "expected": "UserError: UNAUTHORIZED_RETRACTION",
+      "actual": "\"UNAUTHORIZED_RETRACTION\"",
+      "expectedFailure": true,
+      "readBack": "Non-author retraction blocked"
+    },
+    {
+      "step": "X4",
+      "scenario": "Expected Failure: Unpinned URL Blocked",
+      "method": "propose_entry",
+      "account": "B",
+      "args": [
+        "http-retry",
+        "dns-cache",
+        "Cache DNS for 60s.",
+        "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/main/evidence/e1_5xx_retry_policy.txt",
+        0
+      ],
+      "hash": "0xff943de0fbfde3847f145979cc08abe76c2b1194e90343d946addbbd489d23d1",
+      "status": "FINALIZED",
+      "executionResult": "ERROR",
+      "consensusResult": "MAJORITY_AGREE",
+      "returnOrError": "\"INVALID_EVIDENCE_URL\"",
+      "votes": {
+        "0x709a1dDECA594C16AB3864A00Eaa2BB1Cd9b5305": "idle",
+        "0x8ADae333478F9D037c78b0E3E8279DdAAb20a1B3": "idle",
+        "0xe1626534791FC675ED813Cc2C89C427866526113": "agree",
+        "0xe83D7241D0FF0f1f808B9ab3cb06dD2565bDc605": "agree",
+        "0xf1EAD5E5f876eae701eF1881b42861079cd9A287": "agree"
+      },
+      "expected": "UserError: INVALID_EVIDENCE_URL",
+      "actual": "\"INVALID_EVIDENCE_URL\"",
+      "expectedFailure": true,
+      "readBack": "Unpinned mutable git branch URL blocked"
+    },
+    {
+      "step": "X5",
+      "scenario": "Expected Failure: Premature Epoch Freeze Blocked",
+      "method": "freeze_epoch",
+      "account": "A",
+      "args": [
+        "http-retry"
+      ],
+      "hash": "0xf12c234eea4e781d2ff43b16306e9cc85aaec38c3288e8387fba5b1705cced24",
+      "status": "FINALIZED",
+      "executionResult": "ERROR",
+      "consensusResult": "MAJORITY_AGREE",
+      "returnOrError": "\"EPOCH_NOT_READY\"",
+      "votes": {
+        "0x2bB088e4E6Fd1faBBd23d93F38D01f28a954A49c": "idle",
+        "0x722474B013fA39E5aA8785f927dCeB0e3F89815B": "agree",
+        "0x8644a8D2D08903cAFA1F0fb28E34E0ecA727e9ED": "agree",
+        "0xc675c2B7E1F066B7c1D2fe54EF7B76C91CdFa5F4": "agree",
+        "0xe83D7241D0FF0f1f808B9ab3cb06dD2565bDc605": "idle"
+      },
+      "expected": "UserError: EPOCH_NOT_READY",
+      "actual": "\"EPOCH_NOT_READY\"",
+      "expectedFailure": true,
+      "readBack": "Premature freeze before epoch deadline blocked"
+    },
+    {
+      "step": "S6",
+      "scenario": "Parent Retraction + Deterministic Cascade to Child",
+      "method": "retract_entry",
+      "account": "A",
+      "args": [
+        1,
+        "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e4_errata_retract_5xx.txt"
+      ],
+      "hash": "0x6d4af5e32b07998d00814bb64cdfe5789c2972520f56a5f65bb59545887a3ed0",
+      "status": "FINALIZED",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "returnOrError": "RETRACTED:ENTRY_1:ORPHANED_1",
+      "votes": {
+        "0x29300188B54F5BFEE91542595611603b4B201008": "idle",
+        "0x2bB088e4E6Fd1faBBd23d93F38D01f28a954A49c": "idle",
+        "0x8ADae333478F9D037c78b0E3E8279DdAAb20a1B3": "agree",
+        "0xe1626534791FC675ED813Cc2C89C427866526113": "agree",
+        "0xe83D7241D0FF0f1f808B9ab3cb06dD2565bDc605": "agree"
+      },
+      "expected": "RETRACTED:ENTRY_1:ORPHANED_1",
+      "actual": "RETRACTED:ENTRY_1:ORPHANED_1",
+      "expectedFailure": false,
+      "readBack": {
+        "entry1": {
+          "id": 1,
+          "author": "0x13bd955B020e9efe81BeEf03Bd4B057Ac2465EC3",
+          "scope_key": "5xx-responses",
+          "rule_statement": "All HTTP 5xx server error responses must be retried up to 3 times using exponential backoff.",
+          "evidence_url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e1_5xx_retry_policy.txt",
+          "evidence_digest": "9cdd9145d16281f2c63b2856d5c72b93a763c0c6b83693f8947788d20106d47f",
+          "retraction_url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e4_errata_retract_5xx.txt",
+          "retraction_digest": "54a88e6f901c5d6489f084fcd51e61b99acd0d257fe70ce1d4b637bb1094b535",
+          "parent_id": 0,
+          "depth": 1,
+          "children": [
+            2
+          ],
+          "status": "RETRACTED",
+          "relation": "INITIAL"
+        },
+        "entry2": {
+          "id": 2,
+          "author": "0xBeAd63dC66143c8FcD09439e820AB29d7d63c705",
+          "scope_key": "503-maintenance",
+          "rule_statement": "HTTP 503 responses carrying header X-Maintenance-Window must never be retried, carving out maintenance windows from general 5xx retries.",
+          "evidence_url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e2_503_maintenance_carveout.txt",
+          "evidence_digest": "b9adfaa139a210239e175dea17ba1fe3b4e26651a6de5529d434e697a9674875",
+          "retraction_url": "",
+          "retraction_digest": "",
+          "parent_id": 1,
+          "depth": 2,
+          "children": [],
+          "status": "ORPHANED_BY_PARENT",
+          "relation": "NARROWS"
+        },
+        "entry3": {
+          "id": 3,
+          "author": "0x48AA203D6F0691F9Ae0633391c6D00C9B78B6637",
+          "scope_key": "429-rate-limit",
+          "rule_statement": "HTTP 429 Too Many Requests responses must pause and wait for the duration in the Retry-After header.",
+          "evidence_url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e3_429_ratelimit_policy.txt",
+          "evidence_digest": "95c107610aa71b2d0bd1dde3ed61cb160d388cd1962bf1d55489cc2d9ce71522",
+          "retraction_url": "",
+          "retraction_digest": "",
+          "parent_id": 0,
+          "depth": 1,
+          "children": [],
+          "status": "ACTIVE",
+          "relation": "ORTHOGONAL"
+        }
+      }
+    },
+    {
+      "step": "X6",
+      "scenario": "Expected Failure: Carve-out on Orphaned/Retracted Parent Blocked",
+      "method": "propose_entry",
+      "account": "B",
+      "args": [
+        "http-retry",
+        "503-sub",
+        "Never retry 503 on gateway.",
+        "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e2_503_maintenance_carveout.txt",
+        2
+      ],
+      "hash": "0xc369471b342a14aeb6bc487aed29835e4549e577df9daaa62f6c83541b62703e",
+      "status": "FINALIZED",
+      "executionResult": "ERROR",
+      "consensusResult": "MAJORITY_AGREE",
+      "returnOrError": "\"PARENT_NOT_ACTIVE\"",
+      "votes": {
+        "0x2bB088e4E6Fd1faBBd23d93F38D01f28a954A49c": "agree",
+        "0x8644a8D2D08903cAFA1F0fb28E34E0ecA727e9ED": "idle",
+        "0x8f1abcAF0fF10678Af925f83b2Bb8b3534c4b94b": "idle",
+        "0xe83D7241D0FF0f1f808B9ab3cb06dD2565bDc605": "agree",
+        "0xf1EAD5E5f876eae701eF1881b42861079cd9A287": "agree"
+      },
+      "expected": "UserError: PARENT_NOT_ACTIVE",
+      "actual": "\"PARENT_NOT_ACTIVE\"",
+      "expectedFailure": true,
+      "readBack": "Carve-out targeting orphaned parent prevented"
+    },
+    {
+      "step": "S7",
+      "scenario": "Permissionless Epoch Freeze",
+      "method": "freeze_epoch",
+      "account": "C",
+      "args": [
+        "http-retry"
+      ],
+      "hash": "0x0503d9d8ab852bd4a938dcf3e7e8247fa3d6c0f343bb87bbe3aab10d90788ebb",
+      "status": "FINALIZED",
+      "executionResult": "SUCCESS",
+      "consensusResult": "MAJORITY_AGREE",
+      "returnOrError": "FROZEN:EPOCH_1:DIGEST_6033794bf772aeb8430e07edd5a8a1af44fe2440334f5c2b515564c44668afeb",
+      "votes": {
+        "0x0cf3809a31B0c7E0742d126451aDE1977e3748D2": "idle",
+        "0x722474B013fA39E5aA8785f927dCeB0e3F89815B": "agree",
+        "0x8644a8D2D08903cAFA1F0fb28E34E0ecA727e9ED": "idle",
+        "0x8f1abcAF0fF10678Af925f83b2Bb8b3534c4b94b": "agree",
+        "0xe83D7241D0FF0f1f808B9ab3cb06dD2565bDc605": "agree"
+      },
+      "expected": "FROZEN:EPOCH_1:DIGEST_<canon_digest>",
+      "actual": "FROZEN:EPOCH_1:DIGEST_6033794bf772aeb8430e07edd5a8a1af44fe2440334f5c2b515564c44668afeb",
+      "expectedFailure": false,
+      "readBack": {
+        "domain_tag": "http-retry",
+        "creator": "0x13bd955B020e9efe81BeEf03Bd4B057Ac2465EC3",
+        "epoch": 1,
+        "epoch_deadline": 1794306611,
+        "status": "FROZEN",
+        "attempts": 6,
+        "replay_keys": [
+          "9c50490b3560e36c14aef75825482e487b281229903801989a1e725bdb55ad8d",
+          "b159864c5c16ef2d153738766bef0457d27fe94e72b7d12dea21438b1774c323",
+          "4848b32a6d3ffc1830f139f4e8b4e5724310601b6badfd806251003bde7ae1ae",
+          "6a44a452664c872dcb97f3b81f6197237c7a24412d3b5f088c6fca85fbfc39a8",
+          "4c5f9b8e136bfb4fd4e30f80c272864f3092976200fd35c8f538a9c65de402fb",
+          "86e662c70078f4af480bf4877aa9eb71119b4b278f5d9c18eb36b1859945c569"
+        ],
+        "canon_digest": "6033794bf772aeb8430e07edd5a8a1af44fe2440334f5c2b515564c44668afeb",
+        "entries": [
+          {
+            "id": 1,
+            "author": "0x13bd955B020e9efe81BeEf03Bd4B057Ac2465EC3",
+            "scope_key": "5xx-responses",
+            "rule_statement": "All HTTP 5xx server error responses must be retried up to 3 times using exponential backoff.",
+            "evidence_url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e1_5xx_retry_policy.txt",
+            "evidence_digest": "9cdd9145d16281f2c63b2856d5c72b93a763c0c6b83693f8947788d20106d47f",
+            "retraction_url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e4_errata_retract_5xx.txt",
+            "retraction_digest": "54a88e6f901c5d6489f084fcd51e61b99acd0d257fe70ce1d4b637bb1094b535",
+            "parent_id": 0,
+            "depth": 1,
+            "children": [
+              2
+            ],
+            "status": "RETRACTED",
+            "relation": "INITIAL"
+          },
+          {
+            "id": 2,
+            "author": "0xBeAd63dC66143c8FcD09439e820AB29d7d63c705",
+            "scope_key": "503-maintenance",
+            "rule_statement": "HTTP 503 responses carrying header X-Maintenance-Window must never be retried, carving out maintenance windows from general 5xx retries.",
+            "evidence_url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e2_503_maintenance_carveout.txt",
+            "evidence_digest": "b9adfaa139a210239e175dea17ba1fe3b4e26651a6de5529d434e697a9674875",
+            "retraction_url": "",
+            "retraction_digest": "",
+            "parent_id": 1,
+            "depth": 2,
+            "children": [],
+            "status": "ORPHANED_BY_PARENT",
+            "relation": "NARROWS"
+          },
+          {
+            "id": 3,
+            "author": "0x48AA203D6F0691F9Ae0633391c6D00C9B78B6637",
+            "scope_key": "429-rate-limit",
+            "rule_statement": "HTTP 429 Too Many Requests responses must pause and wait for the duration in the Retry-After header.",
+            "evidence_url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e3_429_ratelimit_policy.txt",
+            "evidence_digest": "95c107610aa71b2d0bd1dde3ed61cb160d388cd1962bf1d55489cc2d9ce71522",
+            "retraction_url": "",
+            "retraction_digest": "",
+            "parent_id": 0,
+            "depth": 1,
+            "children": [],
+            "status": "ACTIVE",
+            "relation": "ORTHOGONAL"
+          }
+        ]
+      }
+    },
+    {
+      "step": "X7",
+      "scenario": "Expected Failure: Double Freeze Blocked",
+      "method": "freeze_epoch",
+      "account": "A",
+      "args": [
+        "http-retry"
+      ],
+      "hash": "0x66669492d15b28f5f2143fe146c666e7aba896a3808f68059f13fc027307f9d7",
+      "status": "FINALIZED",
+      "executionResult": "ERROR",
+      "consensusResult": "MAJORITY_AGREE",
+      "returnOrError": "\"DOMAIN_ALREADY_FROZEN\"",
+      "votes": {
+        "0x0174b4D7494Be33F46B76976f6c9F94004F1b27f": "agree",
+        "0x29300188B54F5BFEE91542595611603b4B201008": "agree",
+        "0x560FBD37a10bC2B96F118071e922c9106c12Ba1d": "agree",
+        "0x722474B013fA39E5aA8785f927dCeB0e3F89815B": "idle",
+        "0xe83D7241D0FF0f1f808B9ab3cb06dD2565bDc605": "idle"
+      },
+      "expected": "UserError: DOMAIN_ALREADY_FROZEN",
+      "actual": "\"DOMAIN_ALREADY_FROZEN\"",
+      "expectedFailure": true,
+      "readBack": "Double freeze prevented"
+    }
+  ],
+  "finalDomainState": {
+    "domain_tag": "http-retry",
+    "creator": "0x13bd955B020e9efe81BeEf03Bd4B057Ac2465EC3",
+    "epoch": 1,
+    "epoch_deadline": 1794306611,
+    "status": "FROZEN",
+    "attempts": 6,
+    "replay_keys": [
+      "9c50490b3560e36c14aef75825482e487b281229903801989a1e725bdb55ad8d",
+      "b159864c5c16ef2d153738766bef0457d27fe94e72b7d12dea21438b1774c323",
+      "4848b32a6d3ffc1830f139f4e8b4e5724310601b6badfd806251003bde7ae1ae",
+      "6a44a452664c872dcb97f3b81f6197237c7a24412d3b5f088c6fca85fbfc39a8",
+      "4c5f9b8e136bfb4fd4e30f80c272864f3092976200fd35c8f538a9c65de402fb",
+      "86e662c70078f4af480bf4877aa9eb71119b4b278f5d9c18eb36b1859945c569"
+    ],
+    "canon_digest": "6033794bf772aeb8430e07edd5a8a1af44fe2440334f5c2b515564c44668afeb",
+    "entries": [
+      {
+        "id": 1,
+        "author": "0x13bd955B020e9efe81BeEf03Bd4B057Ac2465EC3",
+        "scope_key": "5xx-responses",
+        "rule_statement": "All HTTP 5xx server error responses must be retried up to 3 times using exponential backoff.",
+        "evidence_url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e1_5xx_retry_policy.txt",
+        "evidence_digest": "9cdd9145d16281f2c63b2856d5c72b93a763c0c6b83693f8947788d20106d47f",
+        "retraction_url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e4_errata_retract_5xx.txt",
+        "retraction_digest": "54a88e6f901c5d6489f084fcd51e61b99acd0d257fe70ce1d4b637bb1094b535",
+        "parent_id": 0,
+        "depth": 1,
+        "children": [
+          2
+        ],
+        "status": "RETRACTED",
+        "relation": "INITIAL"
+      },
+      {
+        "id": 2,
+        "author": "0xBeAd63dC66143c8FcD09439e820AB29d7d63c705",
+        "scope_key": "503-maintenance",
+        "rule_statement": "HTTP 503 responses carrying header X-Maintenance-Window must never be retried, carving out maintenance windows from general 5xx retries.",
+        "evidence_url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e2_503_maintenance_carveout.txt",
+        "evidence_digest": "b9adfaa139a210239e175dea17ba1fe3b4e26651a6de5529d434e697a9674875",
+        "retraction_url": "",
+        "retraction_digest": "",
+        "parent_id": 1,
+        "depth": 2,
+        "children": [],
+        "status": "ORPHANED_BY_PARENT",
+        "relation": "NARROWS"
+      },
+      {
+        "id": 3,
+        "author": "0x48AA203D6F0691F9Ae0633391c6D00C9B78B6637",
+        "scope_key": "429-rate-limit",
+        "rule_statement": "HTTP 429 Too Many Requests responses must pause and wait for the duration in the Retry-After header.",
+        "evidence_url": "https://raw.githubusercontent.com/khezzed/PrecedentRegistry/5d15e8173e5272e78fa5a4ca18dd90e415989d6f/evidence/e3_429_ratelimit_policy.txt",
+        "evidence_digest": "95c107610aa71b2d0bd1dde3ed61cb160d388cd1962bf1d55489cc2d9ce71522",
+        "retraction_url": "",
+        "retraction_digest": "",
+        "parent_id": 0,
+        "depth": 1,
+        "children": [],
+        "status": "ACTIVE",
+        "relation": "ORTHOGONAL"
+      }
+    ]
+  }
+}
